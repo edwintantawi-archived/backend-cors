@@ -10,10 +10,10 @@ router.get('/', (_, res) => {
       sameSite: 'none',
       secure: true,
       httpOnly: true,
-      expires: new Date(Date.now() + 900000),
+      expires: new Date(Date.now() + 9999999),
     }
   );
-  res.json({ message: 'token cookie added' });
+  return res.json({ message: 'token cookie added' });
 });
 
 module.exports = router;
