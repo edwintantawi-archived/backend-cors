@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: 'https://frontend-cors.netlify.app',
+    origin: ['https://frontend-cors.netlify.app'],
     credentials: true,
   })
 );
