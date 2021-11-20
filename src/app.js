@@ -1,5 +1,7 @@
 const path = require('path');
 const express = require('express');
+const cookieParser = require('cookie-parser');
+const cors = require('cors');
 const routes = require('./routes');
 
 const app = express();
@@ -9,6 +11,15 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cookieParser());
+app.use(
+  cors({
+    origin: 'http://127.0.0.1:5500',
+    credentials: true,
+    allowedHeaders: 'Set-Cookie',
+  })
+);
+
 routes(app);
 
 app.listen(PORT, () =>
