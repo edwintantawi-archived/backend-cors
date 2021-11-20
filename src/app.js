@@ -15,8 +15,6 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: ['http://127.0.0.1:5500', 'https://frontend-cors.netlify.app/'],
-    allowedHeaders: 'Origin',
-    credentials: true,
   })
 );
 
