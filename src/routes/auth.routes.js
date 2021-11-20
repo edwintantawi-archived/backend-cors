@@ -14,7 +14,7 @@ router.get('/', (_, res) => {
   //     expires: new Date(Date.now() + 9999999),
   //   }
   // );
-  return res.json({ message: 'token cookie added' });
+  res.json({ message: 'token cookie added' });
 });
 
 module.exports = router;
