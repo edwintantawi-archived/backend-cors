@@ -7,15 +7,10 @@ const routes = require('./routes');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const whitelist = [
-  'https://frontend-cors.netlify.app',
-  'http://127.0.0.1:5500',
-];
-
 app.use(
   cors({
     preflightContinue: true,
-    origin: whitelist,
+    origin: 'https://frontend-cors.netlify.app',
     credentials: true,
   })
 );
