@@ -16,6 +16,7 @@ router.get('/login', (_, res) => {
     {
       sameSite: 'none',
       secure: true,
+      httpOnly: true,
       expires: new Date(Date.now() + 9999999),
     }
   );
