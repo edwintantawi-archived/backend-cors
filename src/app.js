@@ -12,6 +12,7 @@ app.use(
     preflightContinue: true,
     origin: 'https://frontend-cors.netlify.app',
     credentials: true,
+    methods: ['GET', 'POST'],
   })
 );
 //
