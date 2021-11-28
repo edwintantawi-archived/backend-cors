@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "express-cors-cookie",
   "version": "1.0.0",
   "description": "",
   "main": "src/app.js",
@@ -11,7 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/edwintantawi/backend-cors.git"
   },
-  "keywords": [],
+  "keywords": [
+    "expressjs",
+    "cors",
+    "cookie"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -21,7 +25,7 @@
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "ejs": "^3.1.6",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
