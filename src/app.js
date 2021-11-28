@@ -13,8 +13,7 @@ app.use(
     credentials: true,
   })
 );
-//
-app.set('etag', false);
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
