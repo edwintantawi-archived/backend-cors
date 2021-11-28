@@ -15,7 +15,6 @@ router.get('/login', (_, res) => {
     sameSite: 'none',
     secure: true,
     httpOnly: true,
-    path: '/api/auth',
     expires: new Date(Date.now() + 9999999),
   });
   return res.json({ message: 'token cookie added' });
