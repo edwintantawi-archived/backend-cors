@@ -17,7 +17,7 @@ router.get('/login', (_, res) => {
     httpOnly: true,
     expires: new Date(Date.now() + 9999999),
   });
-  return res.json({ message: 'token cookie added' });
+  return res.json({ message: 'token cookie added', token: dummyToken });
 });
 
 module.exports = router;
